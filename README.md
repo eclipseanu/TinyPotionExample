@@ -37,13 +37,13 @@ generates this save data:
 [
   {
     "Identity": {
-      "Name": "Shegorath the Soldier"
+      "Name": "Elara the Carpenter"
     },
     "Stats": [
       {
-        "Max": 100,
+        "Name": "Health",
         "Value": 100,
-        "Name": "Health"
+        "Max": 100
       }
     ],
     "Flags": [
@@ -57,10 +57,10 @@ generates this save data:
       }
     ]
   },
-  [...]
 ]
 ```
-Etc
+Etc...
+
 To Create and Modify stats with potions, you can use a potion factory like:
 
 ```cs
