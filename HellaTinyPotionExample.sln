@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellaTinyPotionExample", "HellaTinyPotionExample\HellaTinyPotionExample.csproj", "{586C6E6A-10DA-406B-9D88-D1467B641D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HellaTinyPotionExample.Saving", "HellaTinyPotionExample.Saving\HellaTinyPotionExample.Saving.csproj", "{0706059A-50DD-4C13-99D0-58ADF7848824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthPotionApplication", "HealthPotionApplication\HealthPotionApplication.csproj", "{3E7939A6-9F45-4DBC-B80E-D6A0F8DF6EB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{586C6E6A-10DA-406B-9D88-D1467B641D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{586C6E6A-10DA-406B-9D88-D1467B641D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{586C6E6A-10DA-406B-9D88-D1467B641D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{586C6E6A-10DA-406B-9D88-D1467B641D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0706059A-50DD-4C13-99D0-58ADF7848824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0706059A-50DD-4C13-99D0-58ADF7848824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0706059A-50DD-4C13-99D0-58ADF7848824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0706059A-50DD-4C13-99D0-58ADF7848824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E7939A6-9F45-4DBC-B80E-D6A0F8DF6EB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E7939A6-9F45-4DBC-B80E-D6A0F8DF6EB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E7939A6-9F45-4DBC-B80E-D6A0F8DF6EB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E7939A6-9F45-4DBC-B80E-D6A0F8DF6EB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
