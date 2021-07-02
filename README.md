@@ -36,6 +36,9 @@ generates this save data:
 ```json
 [
   {
+    "Identity": {
+      "Name": "Shegorath the Soldier"
+    },
     "Stats": [
       {
         "Max": 100,
@@ -52,14 +55,12 @@ generates this save data:
         "Name": "Dead",
         "Status": false
       }
-    ],
-    "Identity": {
-      "Name": "Jeff the Bard"
-    }
-  }
+    ]
+  },
+  [...]
 ]
 ```
-
+Etc
 To Create and Modify stats with potions, you can use a potion factory like:
 
 ```cs
