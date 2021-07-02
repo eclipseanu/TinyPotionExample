@@ -8,7 +8,7 @@ It runs this game logic:
 
 
 ```cs
- public void Run()
+        public void Run()
         {
             var player = _actors.CreatePlayer();
             var npc = _actors.CreateNpc();
@@ -17,14 +17,16 @@ It runs this game logic:
             _world.Add(player);
             _world.Add(npc);
             _world.Add(army);
-            
-            _world.Actions.DrinkPotion(player,_potions.Healing());
-            _world.Actions.DrinkPotion(npc,_potions.Invincibility());
-            _world.Actions.DrinkPotion(army,_potions.Vitality());
-            _world.Actions.DrinkPotion(army,_potions.Death());
+
+            var action = _world.Actions;
+            action.DrinkPotion(player,_potions.Healing());
+            action.DrinkPotion(npc,_potions.Invincibility());
+            action.DrinkPotion(army,_potions.Vitality());
+            action.DrinkPotion(army,_potions.Death());
 
             _world.UndoLastAction();
             _world.Save();
+            
             OpenSaveFile();
         }
 ```
@@ -193,7 +195,7 @@ generates this save data:
 To Create and Modify stats with potions, you can use a potion factory like:
 
 ```cs
-    public class PotionFactory
+       public class PotionFactory
     {
         public Potion Invincibility() => new Potion("Invincibility","Makes you invincible")
         {
@@ -207,7 +209,7 @@ To Create and Modify stats with potions, you can use a potion factory like:
 
         public Potion Vitality() => new Potion("Vitality","Increase Max Health by 20%")
         {
-            {"Health", x => (int)(x.Max * 1.2f), true}
+            {"Health", x => x.WithIncrease(0.2f), true}
         };
 
         public Potion Death() => new Potion("Death", "Kills you")
