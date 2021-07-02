@@ -1,6 +1,8 @@
 # TinyPotionExample
 Simple Example of flags, stats, potions, world actions and persistence that supports undo
 
+(Just keep in mind this is a thought exercise written in an hour, not a real robust system. In a practical example I would do this test driven and have a qualified code covered test suite, use it as an example of a possible approach to boundary design and thats it.)
+
 It runs this game logic:
 
 
